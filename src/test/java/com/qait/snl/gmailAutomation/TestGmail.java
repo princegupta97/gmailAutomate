@@ -72,14 +72,16 @@ public class TestGmail {
                     
                     inboxwait.until(ExpectedConditions.jsReturnsValue("return document.querySelector('tr.zA.zE');"));
                     js.executeScript("return document.querySelector('tr.zA.zE').click();");
-                    read=1;
-                } catch (Exception e) {
+                  } 
+                catch (Exception e) 
+                {
 
                 }
  
             Thread.sleep(1000);
             inboxCount = CharMatcher.digit().retainFrom(js.executeScript("return document.querySelector(('a.J-Ke.n0')).text;").toString());
-            if (!inboxCount.isEmpty()) {
+            if (!inboxCount.isEmpty()) 
+            {
                 inboxCount2 = Integer.parseInt(inboxCount);
             } 
             else
