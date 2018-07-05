@@ -43,11 +43,11 @@ public class TestGmail {
 		String inboxCount;
 		int inboxCount1,inboxCount2;
 		driver.get("https://mail.google.com/mail/u/0/#inbox");
-		js.executeScript("return document.getElementById('identifierId').value='pgprince723'");
+		js.executeScript("return document.getElementById('identifierId').value='email'");
 		js.executeScript("return document.querySelector('#identifierNext > content').click();");
 		Thread.sleep(2000);
 			js.executeScript(
-				"return document.querySelector('#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input').value='sanjy654321'");
+				"return document.querySelector('#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input').value='password'");
 		js.executeScript("return document.querySelector('#passwordNext > div:nth-child(2)').click()");
 		
 		try 
